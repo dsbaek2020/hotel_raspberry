@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>UZ HOTEL</title>
+<style type ="text/css">
+div#top_top{
+width:1230px;
+height:100px;
+background-color:gray;
+float:initial;
+margin:5px;
+text-align: center;
+font-size: 37px;
+font-weight: bold
+}
+#side_left{
+width:300px;
+height:700px;
+background-color:lightblue;
+float:left;
+margin:5px;
+text-align: center;
+}
+#side_left_box{
+width:95%;
+height:35%;
+background-color:gray;
+float:left;
+margin:5px;
+text-align: center;
+}
+#mid_content{
+width:610px;
+height:710px;
+background-color:beige;
+float:left;
+margin:5px;
+text-align: center;
+}
+#side_content_box{
+display: inline;
+background-color:gray;
+margin:5px;
+text-align: center;
+}
+#side_rigth{
+width:300px;
+height:700px;
+background-color:lightblue;
+float:left;
+margin:5px;
+text-align: center;
+}
+#side_rigth_box{
+width:95%;
+height:45%;
+background-color:gray;
+margin:5px;
+margin-top:5%;
+text-align: center;
+}
+</style>
+</head>
+<body>
+  <div id = "top_top">WELCOME to UZ Hotel</div>
+<div id = "side_left">    Left Side Bar
+  <h1>Select Room</h1>
+  <form action="/post"  method="post">
+     <fieldset>
+        <legend>selecting room</legend>
+        <p>
+           <label>Select list</label>
+           <select id = "room_number">
+             <option value = 1>101</option>
+             <option value = 2>102</option>
+             <option value = 3>103</option>
+             <option value = 4>104</option>
+             <option value = 5>105</option>
+           </select>
+        </p>
+     </fieldset>
+      <input id = "search" type = "submit" name="submit" onclick="input_number()" value = "search" />
+     <textarea id = "result__" name = "result" col="20" rows="4"> {{room_status}} </textarea>
+
+  </form>
+
+    <div id = "side_left_box">sidebarleftup</div>
+    <div id = "side_left_box">sidebarleftdown</div>
+</div>
+<div id = "mid_content">
+    <div id = "side_content_box">firstarea</div>
+    <div id = "side_content_box">secondarea</div>
+</div>
+<div id = "side_rigth">sidebarright
+    <div id = "side_rigth_box">sidebarrightdown</div>
+</div>
+</body>
+<script src = "../static/hotel.js"></script>
+</html>
